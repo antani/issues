@@ -20,6 +20,6 @@ defmodule IssuesTest do
   end  
 
   test "get correct response from github" do
-    assert test_fetch("elixir-lang", "elixir") == {200, "anything" }
+    assert test_fetch("elixir-lang", "elixir") == {:ok, "anything" }
   end  
 end
